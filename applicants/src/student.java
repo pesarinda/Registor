@@ -11,5 +11,17 @@ public class student {
         registrationStatus = "Pending";
         examCentre = "Not assigned";
     }
+    student(String name, String school) {
+        System.out.println("[Student constructor] Registering " + name + "...");
+        this.name = name;
+        this.school = school;
+    }
+
+    void display() {
+        System.out.println("   Name: " + name + "  School: " + school
+                + "  Status: " + registrationStatus
+                + "  Centre: " + examCentre
+                + "  Fee: " + uneb.registrationFee);
+    }
 
 }
